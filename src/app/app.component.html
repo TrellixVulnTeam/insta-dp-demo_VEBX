@@ -1,0 +1,21 @@
+<div classs="container">
+  <div class="header" style="display: flex; align-items: center;">
+    <img style="width: 50px; height: 50px"
+      src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-shapes-2-free/128/social-instagram-new-circle-1024.png" />
+    <div style="margin-left: 20px;">
+      <h2>Insta High Res Downloader</h2>
+      <div class="search-input">
+        <input #input style="width: 220px" type="text" />
+        <button (click)="search(input.value)">Search</button>
+      </div>
+    </div>
+  </div>
+  <div class="body">
+    <div class="advert1"></div>
+    <div class="picture-body">
+      <img *ngIf="userHdUrl" style="width: 500px; height: 500px" [src]='userHdUrl'/>
+      {{userHdUrl}}
+    </div>
+    <div class="advert2"></div>
+  </div>
+</div>
