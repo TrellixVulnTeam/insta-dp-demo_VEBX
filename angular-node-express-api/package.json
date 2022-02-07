@@ -12,6 +12,7 @@
     "request": "^2.88.2"
   },
   "devDependencies": {
+    "@angular/compiler": "^13.2.1",
     "nodemon": "^2.0.15"
   }
 }
